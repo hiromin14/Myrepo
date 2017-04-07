@@ -1,0 +1,11 @@
+<% include ../header %>
+<h1>編集</h1>
+<form method="post" action="/posts/<%= id %>">
+<p>タイトル：<input type="text" name="title" value="<%= post.title %>" size="40" maxlength="20"></p>
+<p>ひとこと：<input type="text" name="body" value="<%= post.body %>" size="60" maxlength="40"></p>
+    <input type="hidden" name="id" value="<%= id %>">
+    <input type="hidden" name="_method" value="put">
+<p><input type="submit" value="更新"></p>
+</form>
+<a href="/">戻る</a>
+<%include ../footer %>

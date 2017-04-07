@@ -1,0 +1,9 @@
+<% include ../header %>
+<h1>新規作成</h1>
+<form method="post" action="/posts/create">
+<p>タイトル：<input type="text" name="title" size="40" maxlength="20"></p>
+<p>ひとこと：<input type="text" name="body" size="60" maxlength="40"></p>
+<p><input type="submit" value="送信する"></p>
+</form>
+<a href="/">戻る</a>
+<%include ../footer %>
