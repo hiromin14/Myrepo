@@ -24,7 +24,7 @@ app.get('/posts/new', post.new); // 新規作成
 app.post('/posts/create', post.create); // 記事生成フォームをポストする
 app.get('/posts/:id/edit', post.edit); // 更新する
 app.post('/posts/:id', post.update); // フォームの更新
-app.post('/posts/:id', post.destroy); // 削除
+app.post('/posts/:id/delete', post.destroy); // 削除
 
 
 app.listen(3000);
